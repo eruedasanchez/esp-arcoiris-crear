@@ -1,0 +1,879 @@
+/* reset */
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: bordex-box;
+}
+
+/***************************** Conversion universal para utilizar rem en decimal (1rem = 10px) *****************************/
+
+html{
+    font-size: 62.5%;
+}
+
+/***************************** header *****************************/ 
+
+header{
+    width: 100%;
+    height: 21rem;
+    background-color: #FCEFE4;
+    display: flex;
+    justify-content: center;
+}
+
+.container-header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 3rem;  
+    padding-left: 1rem; 
+    /* padding-right: 40px; */
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    padding-left: 2rem;
+    padding-top: 6rem;
+    gap: 1rem;
+    flex-direction: row;
+    /* align-items: start; */
+    /* justify-content: center; */
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.header-icons{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-right: 3rem;
+    padding-left: 6rem;
+    gap: 1rem;
+}
+
+.header-icons li a{
+    text-decoration: none;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; 
+}
+
+.header-icons a span{
+    vertical-align: 25%;
+}
+
+/****************************** index.html ******************************/
+
+.container-main-title{
+    background-color: #FCEFE4;
+    /* saco el width para que se adapte al width del header */
+    height: 56rem;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(4,10rem); 
+    grid-template-columns: 70rem 40rem;
+    grid-template-areas: 
+    "title    image"
+    "title    image"
+    "subtitle image"
+    "subtitle image";
+}
+
+.main-title{
+    grid-area: title;                                /* ordeno a cada item la posicion que ocupa en la matriz */
+    /* Movimientos self solo para los hijos */
+    justify-self: center;
+    align-self: center;
+}
+
+.main-title h1{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    text-align: left;
+}
+
+.main-subtitle{
+    grid-area: subtitle;                                         
+    /* Movimientos self solo para los hijos */
+}
+
+.main-subtitle h2{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.main-image{
+    grid-area: image;  
+}
+
+.main-image img{
+    width: 40rem;
+    height: 52rem;
+}
+
+.container-images{
+    height: 31.6rem;                             /* largo de pantalla */
+    background-color: #FCEFE4;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,28rem);
+    grid-template-rows: 29rem;
+    padding-left: 3.5rem;
+    padding-right: 4rem;
+}
+
+.presencial{
+    width: 100%;
+    height: 29rem; 
+    background-image: url("../assets/img/index/body/subtitulo/presencial.jpg");
+    background-position: center;  
+    background-size: cover; 
+    background-repeat: no-repeat;  
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    order: 1;                                 
+}
+
+.presencial p{
+    width: 40%;
+    background-color: #7AA7A7;
+    color: #FCEFE4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.1rem;
+    font-weight: bolder;
+}
+
+.online{
+    width: 100%;
+    height: 29rem;
+    background-image: url("../assets/img/index/body/subtitulo/online.jpg");
+    background-position: center; 
+    background-size: cover;                              
+    background-repeat: no-repeat;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    order: 2;                                   
+}
+
+.online p{
+    width: 28%;
+    background-color: #7AA7A7;
+    color: #FCEFE4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+
+.shop{
+    width: 100%;
+    height: 29rem;
+    background-image: url("../assets/img/index/body/subtitulo/tienda.jpg");
+    background-position: center;
+    background-size: cover;                                                       
+    background-repeat: no-repeat;           
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    order: 3;                                                        
+}
+
+.shop p{
+    width: 30%;
+    background-color: #7AA7A7;
+    color: #FCEFE4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+
+.events{
+    width: 100%;
+    height: 29rem;
+    background-image: url("../assets/img/index/body/subtitulo/eventos.jpg");
+    background-position: center;
+    background-size: cover;                                                       
+    background-repeat: no-repeat;   
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    order: 4;                                                                
+}
+
+.events p{
+    width: 34%;
+    background-color: #7AA7A7;
+    color: #FCEFE4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+
+.presencial a, .online a, .events a, .shop a{
+    width: 100%;
+    color: #FCEFE4;
+    background-color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.container-sponsors {
+    background-color: #FCEFE4;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 4rem;  
+    gap: 9rem; 
+}
+
+.container-promos{
+    height: 28.5rem;
+    background-color: #FCEFE4;  
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 4rem 10rem repeat(2, 4rem) ; 
+    grid-template-columns: 50rem 61.5rem;
+    grid-template-areas: 
+    "hasta         image"
+    "veinticinco   image"
+    "prodsel      image"
+    "vermas        image";
+}
+
+.text-promo p{
+    grid-area: hasta;                                 
+    /* Movimientos self solo para los hijos */
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    text-align: start;
+}
+
+.text-promo h2{
+    grid-area: veinticinco; 
+    justify-self: center;
+    align-self: center;
+    font-style: bold;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 7.0rem;
+}
+
+.text-promo h3{
+    grid-area: prodsel; 
+    justify-self: center;
+    align-self: center;
+    font-style: bold;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+
+.text-promo a{
+    grid-area: vermas; 
+    justify-self: center;
+    align-self: center;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.image-promo{
+    grid-area: image;
+    height: 25rem;
+    display: grid;
+    justify-content: right;
+}
+
+.container-newsletter{
+    height: 12rem;
+    background-color: #FCEFE4;  
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 56rem);
+    grid-template-rows:    repeat(2, 5rem);
+    grid-template-areas: 
+    "recibi          form"
+    "suscribite      ."; 
+}
+
+.container-newsletter p{
+    grid-area: recibi;                               
+    text-align: left;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.container-newsletter h2{
+    grid-area: suscribite;                                
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.container-newsletter h3{
+    grid-area: form;                                
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.container-information{
+    height: 17rem;                             
+    background-color: #FCEFE4;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 28rem);
+    grid-template-rows: 5rem repeat(3, 3rem);
+}
+
+.footer-taller{
+    height: 17rem; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;     
+    order: 1;                         
+}
+
+.footer-taller h2{
+    width: 100%; 
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-taller h3{
+    width: 100%; 
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.footer-taller h4{
+    width: 100%; 
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.footer-taller h5{
+    width: 100%; 
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.footer-sale{
+    height: 17rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;     
+    order: 2;                         
+}
+
+.footer-sale h2{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-sale-contact{
+    list-style: none;
+}
+
+.footer-sale-contact li a{
+    text-decoration: none;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem; 
+}
+
+.footer-sale-contact a span{
+    vertical-align: 39%;
+}
+
+.footer-information{
+    height: 17rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;     
+    order: 3;                         
+}
+
+.footer-information h2{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-information h3{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem; 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.footer-information h4{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.footer-information h5{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.footer-social-networks{
+    height: 17rem;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;     
+    order: 4;                         
+}
+
+.footer-social-networks h2{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.footer-redes{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.footer-redes li{
+    list-style: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright{
+    background-color: #FCEFE4;
+}
+
+.copyright p{
+    font-size: 1.6rem;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/****************************** taller.html ******************************/
+
+.taller-title h1{
+    height: 85px;
+    background-color: #FCEFE4;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+}
+
+.container-main-images{
+    height: 408px;
+    background-color: #FCEFE4;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.container-dir{
+    height: 125px;
+    background-color: #FCEFE4;
+    padding-left: 150px;
+}
+
+.container-dir h2{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+
+.container-dir h3{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.container-maps{
+    background-color: #FCEFE4;
+    /* saco el width para que se adapte al width del header */
+    height: 370px;
+    display: grid;
+    grid-template-columns: repeat(2, 345px);
+    grid-template-rows: repeat(5,50px);
+    /* grid-template: repeat(6,100px) / repeat(3,450px); */  /* rows / columns */
+    grid-template-areas: 
+    "map    location"
+    "map    location"
+    "map    location"
+    "map    location"
+    "map    location";
+    padding-left: 150px;
+}
+
+.map{
+    grid-area: map;                                /* ordeno a cada item la posicion que ocupa en la matriz */
+}
+
+.location{
+    grid-area: location;
+    display: grid;
+    grid-template-columns: 345px;
+    grid-template-rows: repeat(5,35px);
+    /* grid-template: repeat(6,100px) / repeat(3,450px); */  /* rows / columns */
+    grid-template-areas: 
+    "gmaps"
+    "h3"
+    "h4"
+    "h5"
+    "whatsapp";
+}
+
+.gmaps{
+    grid-area: gmaps;
+    height: 100%;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.location h3{
+    height: 100%;
+    grid-area: h3;                                
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.location h4{
+    height: 100%;
+    grid-area: h4;                                
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.location h5{
+    height: 100%;
+    grid-area: h5;                                
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.whatsapp-ventas{
+    grid-area: whatsapp;
+    height: 100%;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+
+
+/****************************** staff.html ******************************/
+
+/* body */
+
+.staff-title h1{
+    height: 85px;
+    background-color: #FCEFE4;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+}
+
+.container-integrants{
+    display: flex;
+    flex-direction: row;                        /* movimiento en sentido vertical */
+    flex-wrap: wrap;
+    height: 350px;                              
+    background-color: #FCEFE4;
+    justify-content: space-around;
+    align-items: center;                       /* alinear elementos */
+    row-gap: 20px;
+    /* align-content: flex-end; */              /* solo funciona cuando tengo multilinea */ 
+    padding-left: 40px;
+}
+
+.integrant{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 330px;
+    height: 290px;
+    background-color: #FCEFE4;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-top: 16px;
+    border-style: solid;
+    border-color: #7AA7A7;
+}
+
+.integrant div h2,p{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
+}
+
+.integrant div a{
+    text-decoration: none;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.integrant div a span{
+    vertical-align: 40%;
+}
+
+/****************************** academia.html ******************************/
+
+.academia-main-titles{
+    background-color: #FCEFE4;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.presencial-buttercake{
+    width: 100%;
+    height: 270px;
+    background-color:#FCEFE4;                                      
+    background-image: url("../assets/img/academia/body/capacitaciones-presenciales/buttercream-cake.jpg");
+    background-position: left;                               
+    background-repeat: no-repeat;            
+    background-size: contain; 
+    /* background-size: cover; */                                                       
+}
+
+.presencial-buttercake p{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.presencial-text{
+    width: 100%;                         /* ancho de pantalla */
+    height: 85px;                       /* largo de pantalla */
+    background-color: #FCEFE4;
+}
+
+.presencial-text h2{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.presencial-text p{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.presencial-text a{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.presencial-macarons{
+    width: 100%;
+    height: 270px;
+    background-color:#FCEFE4;                                      
+    background-image: url("../assets/img/academia/body/capacitaciones-presenciales/macarons.jpg");
+    background-position: left;                               
+    background-repeat: no-repeat;            
+    background-size: contain; 
+    /* background-size: cover; */                                                       
+}
+
+.presencial-macarons p{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.tortas-presenciales{
+    width: 100%;                         /* ancho de pantalla */
+    height: 250px;                       /* largo de pantalla */
+    background-color: #FCEFE4;
+}
+
+.online-cake-designer{
+    width: 100%;
+    height: 270px;
+    background-color:#FCEFE4;                                      
+    background-image: url("../assets/img/academia/body/capacitaciones-online/cake-designer.jpg");
+    background-position: left;                               
+    background-repeat: no-repeat;            
+    background-size: contain; 
+    /* background-size: cover; */                                                       
+}
+
+.online-buttercream-full{
+    width: 100%;
+    height: 270px;
+    background-color:#FCEFE4;                                      
+    background-image: url("../assets/img/academia/body/capacitaciones-online/buttercream-full.jpg");
+    background-position: left;                               
+    background-repeat: no-repeat;            
+    background-size: contain; 
+    /* background-size: cover; */                                                       
+}
+
+/****************************** tienda.html ******************************/
+
+.tienda-titles h2{
+    height: 60px;
+    background-color: #FCEFE4;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 40px;
+}
+
+.container-products-courses{
+    display: flex;
+    flex-direction: row;                        /* movimiento en sentido vertical */
+    flex-wrap: wrap;
+    height: 390px;                              
+    background-color: #FCEFE4;
+    justify-content: space-around;
+    align-items: center;                       /* alinear elementos */
+    row-gap: 20px;
+    /* align-content: flex-end; */              /* solo funciona cuando tengo multilinea */ 
+    padding-left: 40px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 260px;
+    height: 290px;
+    background-color: #FCEFE4;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 16px;
+    border-style: solid;
+    border-color: #7AA7A7;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #FCEFE4;
+    justify-content: center;
+    align-items: center;
+}
+
+.details h3{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; 
+}
+
+.details p{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: bolder; 
+}
+
+.details button a{
+    text-decoration: none;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+}
