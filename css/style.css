@@ -13,27 +13,19 @@ html{
 
 /***************************** header *****************************/ 
 
-header{
-    width: 100%;
-    height: 21rem;
-    background-color: #FCEFE4;
-    display: flex;
-    justify-content: center;
-}
-
 .container-header{
+    background-color: #FCEFE4;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding-top: 3rem;  
-    padding-left: 1rem; 
-    /* padding-right: 40px; */
+    padding-left: 7rem; 
+    /* padding-right: 40px; comentario */ 
 }
 
 .navbar{
     display: flex;
     list-style: none;
-    padding-left: 2rem;
     padding-top: 6rem;
     gap: 1rem;
     flex-direction: row;
@@ -876,4 +868,37 @@ header{
     text-decoration: none;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
+}
+
+/****************************** Media queries ******************************/
+
+/* index.html */
+
+@media(max-width:1200px){
+    .navbar{
+        display: none;
+    }
+    .header-icons{
+        gap: 2.5rem;
+    }
+    .header-icons li a span{
+        display: none;
+    }
+    
+}
+
+@media(max-width:768px){
+    /* tablet */
+}
+
+@media(max-width:425px){
+    /* Mobile L */
+}
+
+@media(max-width:375px){
+    /* Mobile M */
+}
+
+@media(max-width:320px){
+    /* Mobile S */
 }
