@@ -20,6 +20,7 @@ html{
     justify-content: space-between;
     padding-top: 3rem;  
     padding-left: 7rem; 
+    padding-right: 1.5rem;
     /* padding-right: 40px; comentario */ 
 }
 
@@ -245,7 +246,7 @@ html{
     grid-template-areas: 
     "hasta         image"
     "veinticinco   image"
-    "prodsel      image"
+    "prodsel       image"
     "vermas        image";
 }
 
@@ -294,6 +295,8 @@ html{
     display: grid;
     justify-content: right;
 }
+
+/****************************** footer ******************************/
 
 .container-newsletter{
     height: 12rem;
@@ -507,19 +510,6 @@ html{
     list-style: none; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .copyright{
     background-color: #FCEFE4;
 }
@@ -530,13 +520,6 @@ html{
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
-
-
-
-
-
-
-
 
 /****************************** taller.html ******************************/
 
@@ -650,8 +633,6 @@ html{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
-
-
 
 /****************************** staff.html ******************************/
 
@@ -872,18 +853,97 @@ html{
 
 /****************************** Media queries ******************************/
 
-/* index.html */
+@media(max-width:1202px){
+    /* header */
 
-@media(max-width:1200px){
-    .navbar{
-        display: none;
-    }
     .header-icons{
-        gap: 2.5rem;
+        gap: 2.4rem;
     }
     .header-icons li a span{
         display: none;
     }
+    .navbar li a{
+        font-size: 2.1rem;
+    }
+
+    /* index.html main */
+
+    .container-main-title{
+        grid-template-rows: repeat(3,15rem); 
+        grid-template-columns: 53rem 40rem;
+        grid-template-areas: 
+        "title    image"
+        "title    image"
+        "subtitle image"
+        ;
+    }
+
+    .container-images{
+        height: 28rem;              
+        grid-template-columns: repeat(4,23.5rem);
+    }
+
+    .presencial, .online, .shop, .events{
+        height: 25rem;
+    }
+    
+    .presencial p{
+        width: 45%;
+    }
+
+    .online p{
+        width: 32%;
+    }
+
+    .shop p{
+        width: 34%;
+    }
+
+    .events p{
+        width: 38%;
+    }
+
+    .container-sponsors{
+        gap: 4.2rem; 
+    }
+
+    .container-promos{
+        grid-template-rows: 5rem 10rem repeat(2, 4.2rem);  
+        grid-template-columns: 60.5rem 33rem;
+    }
+
+    .text-promo p{
+        font-size: 4rem;
+    }
+
+    .text-promo h2{
+        font-size: 8.0rem;
+    }
+
+    .text-promo h3{
+        font-size: 1.9rem;
+    }
+
+    .text-promo a{
+        font-size: 1.7rem;
+    }
+    
+    /* footer */
+
+    .container-newsletter{
+        height: 14rem;
+        grid-template-columns: 55rem 40rem;
+    }
+
+    .container-information{
+        height: 20rem;
+        grid-template-columns: repeat(4, 23.5rem);
+    }
+}
+
+@media(max-width:1015px){
+    /* funciona de 1024 px */
+    /* nueva medida */
     
 }
 
@@ -902,3 +962,4 @@ html{
 @media(max-width:320px){
     /* Mobile S */
 }
+
