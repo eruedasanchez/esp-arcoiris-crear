@@ -1189,8 +1189,62 @@ html{
 
 @media(max-width:768px){
     /* rango de 426px a 768px */
-    /* tablet */
+
+    /* header */
+    .container-header{
+        padding-left: 1rem;
+    }
+
+    .navbar{
+        padding-top: 0.2rem;
+    }
+
+    .header-icons{
+        justify-content: center;
+        padding-top: 1.6rem;
+    }
+    
+    .navbar li a{
+        font-size: 1.7rem;
+    }
+    
+    /* main */
+    .container-main-title{
+        height: 90rem;
+        grid-template-rows: 20rem 44rem 24rem; 
+        grid-template-columns: 37rem;
+        grid-template-areas: 
+        "title"
+        "image"
+        "subtitle";
+    }
+    
+    .main-title h1{
+        font-size: 3.6rem;
+    }
+    
+    .main-subtitle h2{
+        padding-top: 1rem;
+    }
+
+    /* footer */
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:425px){
     /* rango de 376px a 425px */
