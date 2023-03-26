@@ -1494,6 +1494,34 @@ html{
 @media(max-width:374px){
     /* rango de 320px a 374px */
     
+    /* main */
+    .container-main-title{
+        height: 107rem;
+        grid-template-rows: 30rem 30rem 24rem; 
+        grid-template-columns: 20rem;
+    }
+
+    .main-image img{
+        width: 20rem;
+        height: 30rem;
+        padding-left: 0.1rem;
+    }
+
+    .container-promos{
+        grid-template-columns: repeat(2, 15rem);
+    }
+
+    .image-promo img{
+        width: 13rem;
+        height: 20rem;
+    }
+
+    /* footer */
+    .container-newsletter{
+        height: 28rem;
+        grid-template-columns: 30rem;
+        grid-template-rows: 7rem 9rem 7rem;
+    }
 }
 
 
