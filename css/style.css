@@ -981,7 +981,7 @@ html{
 }
 
 @media(max-width:1015px){
-    /* Rango de 769px a 1015px */
+    /* Rango de 768px a 1015px */
 
     /******************************** header ********************************/
     
@@ -1224,6 +1224,24 @@ html{
     .container-promos{
         grid-template-rows: 5rem 10rem repeat(2, 4.2rem);  
         grid-template-columns: 36rem 33rem;
+    }
+    
+    /****************************** taller.html ******************************/
+    
+    .taller-title h1{
+        font-size: 3.3rem;
+        padding-top: 2rem;
+    }
+    
+    .container-main-images{
+        height: 23rem;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+    
+    .container-main-images img{
+        width: 20rem;
+        height: 20rem;
     }
 }
 
