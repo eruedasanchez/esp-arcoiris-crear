@@ -1246,9 +1246,10 @@ html{
 }
 
 @media(max-width:767px){
-    /* rango de 425px a 767px */
+    /* Rango de 425px a 767px */
 
-    /* header */
+    /******************************* header *******************************/
+    
     .container-header{
         padding-left: 1rem;
     }
@@ -1266,122 +1267,7 @@ html{
         font-size: 1.7rem;
     }
     
-    /* main */
-    .container-main-title{
-        height: 90rem;
-        grid-template-rows: 20rem 44rem 24rem; 
-        grid-template-columns: 37rem;
-        grid-template-areas: 
-        "title"
-        "image"
-        "subtitle";
-    }
-    
-    .main-title h1{
-        font-size: 3.6rem;
-    }
-    
-    .main-subtitle h2{
-        padding-top: 1rem;
-    }
-    
-    .container-images{
-        height: 115rem;                             
-        grid-template-columns: 28rem;
-        grid-template-rows: repeat(4,29rem);
-        padding-left: 0.2rem;
-        padding-right: 0.2rem;
-    }
-    
-    .presencial{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        order: 1;                                 
-    }
-    
-    .presencial p{
-        width: 38%;
-    }
-    
-    .online{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        order: 2;                                   
-    }
-    
-    .online p{
-        width: 30%;
-    }
-    
-    .shop{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        order: 3;                                                        
-    }
-    
-    .shop p{
-        width: 31%;
-    }
-
-        
-    .events{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        order: 4;                                                                
-    }
-    
-    .events p{
-        width: 36%;
-    }
-
-    .container-sponsors {
-        height: 23.5rem;
-        display: grid;
-        grid-template-columns: repeat(2,15rem);
-        grid-template-rows: repeat(2,5rem);
-        padding-right: 0.1rem;  
-    }
-
-    .callebaut{
-        padding-left: 10rem;
-    }
-
-    .container-promos{
-        height: 30rem;
-        grid-template-rows: 4rem 10rem repeat(2,4rem); 
-        grid-template-columns: 20rem 20rem;
-    }
-    
-    .text-promo p{
-        font-size: 2.8rem;
-        
-    }
-    
-    .text-promo h2{
-        font-size: 8rem;
-    }
-    
-    .text-promo h3{
-        font-size: 1.6rem;
-    }
-    
-    .text-promo a{
-        font-size: 2rem;
-    }
-    
-    .image-promo{
-        height: 5rem;
-    }
-    
-    /* footer */
+    /******************************* footer *******************************/
 
     .container-newsletter{
         height: 20rem;
@@ -1507,6 +1393,165 @@ html{
     
     .copyright p{
         font-size: 2rem;
+    }
+
+    /******************************* index.html *******************************/
+
+    .container-main-title{
+        height: 90rem;
+        grid-template-rows: 20rem 44rem 24rem; 
+        grid-template-columns: 37rem;
+        grid-template-areas: 
+        "title"
+        "image"
+        "subtitle";
+    }
+    
+    .main-title h1{
+        font-size: 3.6rem;
+    }
+    
+    .main-subtitle h2{
+        padding-top: 1rem;
+    }
+    
+    .container-images{
+        height: 115rem;                             
+        grid-template-columns: 28rem;
+        grid-template-rows: repeat(4,29rem);
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+    
+    .presencial{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        order: 1;                                 
+    }
+    
+    .presencial p{
+        width: 38%;
+    }
+    
+    .online{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        order: 2;                                   
+    }
+    
+    .online p{
+        width: 30%;
+    }
+    
+    .shop{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        order: 3;                                                        
+    }
+    
+    .shop p{
+        width: 31%;
+    }
+
+        
+    .events{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        order: 4;                                                                
+    }
+    
+    .events p{
+        width: 36%;
+    }
+
+    .container-sponsors {
+        height: 23.5rem;
+        display: grid;
+        grid-template-columns: repeat(2,15rem);
+        grid-template-rows: repeat(2,5rem);
+        padding-right: 0.1rem;  
+    }
+
+    .callebaut{
+        padding-left: 10rem;
+    }
+
+    .container-promos{
+        height: 30rem;
+        grid-template-rows: 4rem 10rem repeat(2,4rem); 
+        grid-template-columns: 20rem 20rem;
+    }
+    
+    .text-promo p{
+        font-size: 2.8rem;
+        
+    }
+    
+    .text-promo h2{
+        font-size: 8rem;
+    }
+    
+    .text-promo h3{
+        font-size: 1.6rem;
+    }
+    
+    .text-promo a{
+        font-size: 2rem;
+    }
+    
+    .image-promo{
+        height: 5rem;
+    }
+    
+    /****************************** taller.html ******************************/
+    
+    .taller-title h1{
+        font-size: 3.2rem;
+        padding-left: 4rem;
+    }
+    
+    .container-main-images{
+        height: 104rem;
+        background-color: #FCEFE4;
+        display: grid;
+        grid-template-columns: 30rem;
+        grid-template-rows: repeat(3,34rem);
+    }
+
+    .container-main-images img{
+        width: 30rem;
+        height: 32rem;
+    }
+
+    .container-dir{
+        display: grid;
+        justify-content: center;
+        padding-left: 2rem; 
+    }
+    
+    .container-maps{
+        height: 58rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 34.5rem;
+        grid-template-rows: 34.5rem repeat(5,5rem);
+        grid-template-areas: 
+        "map"
+        "location"
+        "location"
+        "location"
+        "location"
+        "location";
+        padding-left: 4rem;
+        padding-top: 2rem;
     }
 }
 
