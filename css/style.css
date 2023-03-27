@@ -1243,6 +1243,10 @@ html{
         width: 20rem;
         height: 20rem;
     }
+
+    .location{
+        grid-template-columns: 32rem;
+    }
 }
 
 @media(max-width:767px){
@@ -1541,7 +1545,7 @@ html{
         height: 58rem;
         display: grid;
         justify-content: center;
-        grid-template-columns: 34.5rem;
+        grid-template-columns: 32rem;
         grid-template-rows: 34.5rem repeat(5,5rem);
         grid-template-areas: 
         "map"
@@ -1553,12 +1557,16 @@ html{
         padding-left: 4rem;
         padding-top: 2rem;
     }
+
+    .location{
+        grid-template-columns: 32rem;
+    }
 }
 
 @media(max-width:424px){
-    /* rango de 375px a 424px */
+    /* Rango de 375px a 424px */
 
-    /* header */
+    /****************************** header ******************************/
     
     .navbar{
         display: grid;
@@ -1571,13 +1579,7 @@ html{
         padding-left: 2rem;
     }
 
-    /* main */
-
-    .container-promos{
-        grid-template-columns: repeat(2, 17.5rem);
-    }
-
-    /* footer */
+    /****************************** footer ******************************/
 
     .container-newsletter{
         height: 25rem;
@@ -1592,12 +1594,31 @@ html{
     .footer-sale-contact li a{
         padding-left: 4.5rem; 
     }
+
+    /****************************** index.html ******************************/
+
+    .container-promos{
+        grid-template-columns: repeat(2, 17.5rem);
+    }
+
+    /****************************** taller.html ******************************/
+
+    .taller-title h1{
+        font-size: 3.2rem;
+    }
 }
 
 @media(max-width:374px){
-    /* rango de 320px a 374px */
+    /* Rango de 320px a 374px */
+
+    /****************************** footer ******************************/
+    .container-newsletter{
+        height: 28rem;
+        grid-template-columns: 30rem;
+        grid-template-rows: 7rem 9rem 7rem;
+    }
     
-    /* main */
+    /****************************** index.html ******************************/
     .container-main-title{
         height: 107rem;
         grid-template-rows: 30rem 30rem 24rem; 
@@ -1619,11 +1640,29 @@ html{
         height: 20rem;
     }
 
-    /* footer */
-    .container-newsletter{
-        height: 28rem;
+    /****************************** taller.html ******************************/
+
+    .taller-title h1{
+        font-size: 3rem;
+        padding-left: 1.8rem;
+    }
+
+    .container-dir{
+        padding-left: 1.5rem; 
+    }
+
+    .container-maps{
         grid-template-columns: 30rem;
-        grid-template-rows: 7rem 9rem 7rem;
+        padding-left: 0.2rem;
+    }
+
+    .map iframe{
+        width: 29rem; 
+        height: 32rem;
+    }
+
+    .location{
+        grid-template-columns: 30rem;
     }
 }
 
