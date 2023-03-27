@@ -21,7 +21,6 @@ html{
     padding-top: 3rem;  
     padding-left: 7rem; 
     padding-right: 1.5rem;
-    /* padding-right: 40px; comentario */ 
 }
 
 .navbar{
@@ -30,8 +29,6 @@ html{
     padding-top: 6rem;
     gap: 1rem;
     flex-direction: row;
-    /* align-items: start; */
-    /* justify-content: center; */
 }
 
 .navbar li a{
@@ -80,7 +77,6 @@ html{
 
 .main-title{
     grid-area: title;                                /* ordeno a cada item la posicion que ocupa en la matriz */
-    /* Movimientos self solo para los hijos */
     justify-self: center;
     align-self: center;
 }
@@ -94,7 +90,6 @@ html{
 
 .main-subtitle{
     grid-area: subtitle;                                         
-    /* Movimientos self solo para los hijos */
 }
 
 .main-subtitle h2{
@@ -114,7 +109,7 @@ html{
 }
 
 .container-images{
-    height: 31.6rem;                             /* largo de pantalla */
+    height: 31.6rem;                             
     background-color: #FCEFE4;
     display: grid;
     justify-content: center;
@@ -252,7 +247,6 @@ html{
 
 .text-promo p{
     grid-area: hasta;                                 
-    /* Movimientos self solo para los hijos */
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
     font-size: 3.5rem;
@@ -523,49 +517,53 @@ html{
 
 /****************************** taller.html ******************************/
 
-.taller-title h1{
-    height: 85px;
+.taller-title{
+    height: 8rem;
     background-color: #FCEFE4;
+
+}
+.taller-title h1{
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    padding-left: 40px;
+    font-size: 3.5rem;
+    padding-left: 8.5rem;
+    padding-top: 1rem;
 }
 
 .container-main-images{
-    height: 408px;
+    height: 40.8rem;
     background-color: #FCEFE4;
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
+    gap: 1rem;
     justify-content: center;
-    padding-left: 40px;
+    padding-left: 4rem;
 }
 
 .container-dir{
-    height: 125px;
+    height: 12.5rem;
     background-color: #FCEFE4;
-    padding-left: 150px;
+    padding-left: 8rem;
 }
 
 .container-dir h2{
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 .container-dir h3{
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .container-maps{
     background-color: #FCEFE4;
-    /* saco el width para que se adapte al width del header */
-    height: 370px;
+    height: 37rem;
     display: grid;
-    grid-template-columns: repeat(2, 345px);
-    grid-template-rows: repeat(5,50px);
+    grid-template-columns: repeat(2, 34.5rem);
+    grid-template-rows: repeat(5,5rem);
     /* grid-template: repeat(6,100px) / repeat(3,450px); */  /* rows / columns */
     grid-template-areas: 
     "map    location"
@@ -573,19 +571,19 @@ html{
     "map    location"
     "map    location"
     "map    location";
-    padding-left: 150px;
+    padding-left: 8rem;
+    padding-top: 2rem;
 }
 
 .map{
-    grid-area: map;                                /* ordeno a cada item la posicion que ocupa en la matriz */
+    grid-area: map;                                
 }
 
 .location{
     grid-area: location;
     display: grid;
-    grid-template-columns: 345px;
-    grid-template-rows: repeat(5,35px);
-    /* grid-template: repeat(6,100px) / repeat(3,450px); */  /* rows / columns */
+    grid-template-columns: 34.5rem;
+    grid-template-rows: repeat(5,3.5rem);
     grid-template-areas: 
     "gmaps"
     "h3"
@@ -596,42 +594,37 @@ html{
 
 .gmaps{
     grid-area: gmaps;
-    height: 100%;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .location h3{
-    height: 100%;
     grid-area: h3;                                
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .location h4{
-    height: 100%;
     grid-area: h4;                                
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .location h5{
-    height: 100%;
     grid-area: h5;                                
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .whatsapp-ventas{
     grid-area: whatsapp;
-    height: 100%;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 /****************************** staff.html ******************************/
