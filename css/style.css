@@ -1,4 +1,4 @@
-/* reset */
+/****************************** reset ******************************/
 *{
     padding: 0; 
     margin: 0;
@@ -630,48 +630,57 @@ html{
 
 /****************************** staff.html ******************************/
 
-/* body */
+.staff-title{
+    height: 7rem;
+    background-color: #FCEFE4;
+}
 
 .staff-title h1{
-    height: 85px;
-    background-color: #FCEFE4;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    padding-left: 40px;
+    font-size: 3.2rem;
+    padding-left: 7.3rem;
+    padding-top: 1rem;
 }
 
 .container-integrants{
     display: flex;
-    flex-direction: row;                        /* movimiento en sentido vertical */
+    flex-direction: row;                        
     flex-wrap: wrap;
-    height: 350px;                              
+    height: 40rem;                              
     background-color: #FCEFE4;
     justify-content: space-around;
-    align-items: center;                       /* alinear elementos */
-    row-gap: 20px;
+    align-items: center;                       
+    row-gap: 2rem;
     /* align-content: flex-end; */              /* solo funciona cuando tengo multilinea */ 
-    padding-left: 40px;
+    padding-left: 4rem;
 }
 
 .integrant{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 330px;
-    height: 290px;
-    background-color: #FCEFE4;
-    justify-content: flex-start;
+    width: 28rem;
+    height: 27rem;
     align-content: center;
-    align-items: center;
-    padding-top: 16px;
-    border-style: solid;
+    align-items: center; 
+    padding-top: 1.6rem;
+    border-style: solid; 
     border-color: #7AA7A7;
 }
 
-.integrant div h2,p{
+.integrant div h2{
+    font-size: 2.1rem;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    text-align: center; 
+    text-align: center;  
+}
+
+.integrant div p{
+    font-size: 1.7rem;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;  
 }
 
 .integrant div a{
@@ -681,7 +690,8 @@ html{
 }
 
 .integrant div a span{
-    vertical-align: 40%;
+    font-size: 1.4rem;
+    vertical-align: 50%;
 }
 
 /****************************** academia.html ******************************/
@@ -753,8 +763,8 @@ html{
 }
 
 .tortas-presenciales{
-    width: 100%;                         /* ancho de pantalla */
-    height: 250px;                       /* largo de pantalla */
+    width: 100%;                         
+    height: 250px;                       
     background-color: #FCEFE4;
 }
 
