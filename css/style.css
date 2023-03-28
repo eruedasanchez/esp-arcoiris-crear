@@ -644,52 +644,107 @@ html{
 }
 
 .container-integrants{
-    display: flex;
-    flex-direction: row;                        
-    flex-wrap: wrap;
-    height: 40rem;                              
+    height: 68rem;
     background-color: #FCEFE4;
-    justify-content: space-around;
-    align-items: center;                       
-    row-gap: 2rem;
-    /* align-content: flex-end; */              /* solo funciona cuando tengo multilinea */ 
+    display: grid;
+    justify-content: center; 
+    grid-template-rows: repeat(2,30rem); 
+    grid-template-columns: repeat(3,30rem);
+    grid-template-areas: 
+    "enzo juliana magda"
+    "nicolas antonella paula";
+    column-gap: 2rem;
+    row-gap: 3rem;
     padding-left: 4rem;
+    padding-top: 2rem;
 }
 
-.integrant{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.integrant-enzo{
+    grid-area: enzo;
+    display: grid;
     width: 28rem;
     height: 27rem;
-    align-content: center;
-    align-items: center; 
     padding-top: 1.6rem;
     border-style: solid; 
     border-color: #7AA7A7;
 }
 
-.integrant div h2{
+.integrant-enzo img, .integrant-juliana img, .integrant-magda img, .integrant-nicolas img, .integrant-antonella img, .integrant-paula img{
+    justify-self: center;
+    align-self: center;
+}
+
+.integrant-juliana{
+    grid-area: juliana;
+    display: grid;
+    width: 28rem;
+    height: 27rem;
+    padding-top: 1.6rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.integrant-magda{
+    grid-area: magda;
+    display: grid;
+    width: 28rem;
+    height: 27rem;
+    padding-top: 1.6rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.integrant-nicolas{
+    grid-area: nicolas;
+    display: grid;
+    width: 28rem;
+    height: 27rem;
+    padding-top: 1.6rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.integrant-antonella{
+    grid-area: antonella;
+    display: grid;
+    width: 28rem;
+    height: 27rem;
+    padding-top: 1.6rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.integrant-paula{
+    grid-area: paula;
+    display: grid;
+    width: 28rem;
+    height: 27rem;
+    padding-top: 1.6rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.integrant-enzo div h2, .integrant-juliana div h2, .integrant-magda div h2, .integrant-nicolas div h2, .integrant-antonella div h2, .integrant-paula div h2{
     font-size: 2.1rem;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
     text-align: center;  
 }
 
-.integrant div p{
+.integrant-enzo div p, .integrant-juliana div p, .integrant-magda div p, .integrant-nicolas div p, .integrant-antonella div p, .integrant-paula div p{
     font-size: 1.7rem;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
     text-align: center;  
 }
 
-.integrant div a{
+.integrant-enzo div a, .integrant-juliana div a, .integrant-magda div a, .integrant-nicolas div a, .integrant-antonella div a, .integrant-paula div a{
     text-decoration: none;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
 }
 
-.integrant div a span{
+.integrant-enzo div a span, .integrant-juliana div a span, .integrant-magda div a span, .integrant-nicolas div a span, .integrant-antonella div a span, .integrant-paula div a span{
     font-size: 1.4rem;
     vertical-align: 50%;
 }
@@ -1256,6 +1311,18 @@ html{
 
     .location{
         grid-template-columns: 32rem;
+    }
+
+    /****************************** staff.html ******************************/
+    
+    .container-integrants{
+        height: 102rem;
+        grid-template-rows: repeat(3,30rem); 
+        grid-template-columns: repeat(2,30rem);
+        grid-template-areas: 
+        "enzo juliana" 
+        "magda nicolas"
+        "antonella paula";
     }
 }
 
