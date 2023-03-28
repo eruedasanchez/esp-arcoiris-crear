@@ -1638,6 +1638,26 @@ html{
     .location{
         grid-template-columns: 32rem;
     }
+
+    /****************************** staff.html ******************************/
+    
+    .staff-title h1{
+        font-size: 3rem;
+        padding-left: 3.5rem;
+    }
+    
+    .container-integrants{
+        height: 200rem;
+        grid-template-rows: repeat(6,30rem); 
+        grid-template-columns: 30rem;
+        grid-template-areas: 
+        "enzo" 
+        "juliana" 
+        "magda"
+        "nicolas"
+        "antonella"
+        "paula";
+    }
 }
 
 @media(max-width:424px){
