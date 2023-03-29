@@ -1709,6 +1709,41 @@ html{
         "antonella"
         "paula";
     }
+
+    /****************************** academia.html ******************************/
+
+    .academia-titles{
+        height: 4rem;
+    }
+    
+    .academia-titles h2{
+        font-size: 1.6rem;
+        padding-left: 1.3rem;
+        padding-top: 1.2rem;
+    }
+    
+    .container-courses-in-person{
+        height: 155rem;
+        grid-template-rows: repeat(4,38rem); 
+        grid-template-columns: 28rem;
+        grid-template-areas: 
+        "buttercream" 
+        "macarons"
+        "faultline" 
+        "cupcakes";
+    }
+    
+    .container-courses-online{
+        background-color: #FCEFE4;
+        height: 137rem;
+        grid-template-rows: repeat(4,34rem); 
+        grid-template-columns: 28rem;
+        grid-template-areas: 
+        "cakedesigner"
+        "butterfull"
+        "bakery" 
+        "icepops";
+    }
 }
 
 @media(max-width:424px){
