@@ -1107,7 +1107,7 @@ html{
     .container-information{
         height: 27rem;                             
         grid-template-columns: repeat(2,33rem);
-        grid-template-rows: 5rem repeat(3, 3rem) 5rem repeat(3, 3rem);
+        grid-template-rows: 5rem repeat(3, 3rem) 5rem repeat(2, 3rem);
     }
     
     .footer-taller{
@@ -1338,6 +1338,42 @@ html{
         "enzo juliana" 
         "magda nicolas"
         "antonella paula";
+    }
+
+    /****************************** academia.html ******************************/
+    
+    .container-courses-in-person{
+        height: 76rem;
+        grid-template-rows: repeat(2,38rem); 
+        grid-template-columns: repeat(2,28rem);
+        grid-template-areas: 
+        "buttercream macarons"
+        "faultline cupcakes";
+    }
+
+    .buttercream, .macarons, .faultline, .cupcakes{
+        width: 26rem;
+    }
+    
+    .details h3{
+        font-size: 2.3rem;
+    }
+
+    .details p{
+        font-size: 2rem;
+    }
+
+    .container-courses-online{
+        height: 76rem;
+        grid-template-rows: repeat(2,38rem); 
+        grid-template-columns: repeat(2,28rem);
+        grid-template-areas: 
+        "cakedesigner butterfull"
+        "bakery icepops";
+    }
+    
+    .cake-designer, .butter-full, .bakery , .icepops{
+        width: 26rem;
     }
 }
 
