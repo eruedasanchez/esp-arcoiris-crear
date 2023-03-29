@@ -1847,6 +1847,18 @@ html{
     .location{
         grid-template-columns: 30rem;
     }
+
+    /****************************** academia.html ******************************/
+
+    .academia-titles{
+        height: 6rem;
+    }
+    
+    .academia-titles h2{
+        font-size: 2rem;
+        padding-left: 2rem;
+        padding-top: 1.6rem;
+    }
 }
 
 
