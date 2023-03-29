@@ -751,98 +751,168 @@ html{
 
 /****************************** academia.html ******************************/
 
-.academia-main-titles{
-    background-color: #FCEFE4;
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-}
-
-.presencial-buttercake{
+.academia-titles{
     width: 100%;
-    height: 270px;
-    background-color:#FCEFE4;                                      
-    background-image: url("../assets/img/academia/body/capacitaciones-presenciales/buttercream-cake.jpg");
-    background-position: left;                               
-    background-repeat: no-repeat;            
-    background-size: contain; 
-    /* background-size: cover; */                                                       
-}
-
-.presencial-buttercake p{
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-}
-
-.presencial-text{
-    width: 100%;                         /* ancho de pantalla */
-    height: 85px;                       /* largo de pantalla */
+    height: 5rem;
     background-color: #FCEFE4;
 }
 
-.presencial-text h2{
+.academia-titles h2{
+    font-size: 2.8rem;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    padding-left: 7.1rem;
 }
 
-.presencial-text p{
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+.container-courses-in-person{
+    height: 40rem;
+    background-color: #FCEFE4;
+    display: grid;
+    justify-content: center; 
+    grid-template-rows: 30rem; 
+    grid-template-columns: repeat(4,22rem);
+    grid-template-areas: 
+    "buttercream macarons faultline cupcakes";
+    column-gap: 3.5rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
 }
 
-.presencial-text a{
+.buttercream{
+    grid-area: buttercream;
+    display: grid;
+    width: 20rem;
+    height: 32rem;
+    padding-top: 1rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.macarons{
+    grid-area: macarons;
+    display: grid;
+    width: 20rem;
+    height: 32rem;
+    padding-top: 1rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.faultline{
+    grid-area: faultline;
+    display: grid;
+    width: 20rem;
+    height: 32rem;
+    padding-top: 1rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.cupcakes{
+    grid-area: cupcakes;
+    display: grid;
+    width: 20rem;
+    height: 32rem;
+    padding-top: 1rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.buttercream img, .macarons img, .faultline img, .cupcakes img{
+    justify-self: center;
+    align-self: center;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.details h3{
+    font-size: 1.6rem;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    text-align: center; 
+}
+
+.details p{
+    font-size: 2rem;
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.details button{
+    background-color: #7AA7A7;
+}
+
+.details button a{
     text-decoration: none;
-    font-weight: bolder;
-}
-
-.presencial-macarons{
-    width: 100%;
-    height: 270px;
-    background-color:#FCEFE4;                                      
-    background-image: url("../assets/img/academia/body/capacitaciones-presenciales/macarons.jpg");
-    background-position: left;                               
-    background-repeat: no-repeat;            
-    background-size: contain; 
-    /* background-size: cover; */                                                       
-}
-
-.presencial-macarons p{
-    color: #7AA7A7;
+    color: #FCEFE4;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
 }
 
-.tortas-presenciales{
-    width: 100%;                         
-    height: 250px;                       
+.container-courses-online{
+    height: 40rem;
     background-color: #FCEFE4;
+    display: grid;
+    justify-content: center; 
+    grid-template-rows: 28rem; 
+    grid-template-columns: repeat(4,22rem);
+    grid-template-areas: 
+    "cakedesigner butterfull bakery icepops";
+    column-gap: 3.5rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
 }
 
-.online-cake-designer{
-    width: 100%;
-    height: 270px;
-    background-color:#FCEFE4;                                      
-    background-image: url("../assets/img/academia/body/capacitaciones-online/cake-designer.jpg");
-    background-position: left;                               
-    background-repeat: no-repeat;            
-    background-size: contain; 
-    /* background-size: cover; */                                                       
+.cake-designer{
+    grid-area: cakedesigner;
+    display: grid;
+    width: 20rem;
+    height: 28rem;
+    padding-top: 1rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
 }
 
-.online-buttercream-full{
-    width: 100%;
-    height: 270px;
-    background-color:#FCEFE4;                                      
-    background-image: url("../assets/img/academia/body/capacitaciones-online/buttercream-full.jpg");
-    background-position: left;                               
-    background-repeat: no-repeat;            
-    background-size: contain; 
-    /* background-size: cover; */                                                       
+.butter-full{
+    grid-area: butterfull;
+    display: grid;
+    width: 20rem;
+    height: 28rem;
+    padding-top: 1rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.bakery{
+    grid-area: bakery;
+    display: grid;
+    width: 20rem;
+    height: 28rem;
+    padding-top: 1rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.icepops{
+    grid-area: icepops;
+    display: grid;
+    width: 20rem;
+    height: 28rem;
+    padding-top: 1rem;
+    border-style: solid; 
+    border-color: #7AA7A7;
+}
+
+.cake-designer img, .butter-full img, .bakery img, .icepops img{
+    justify-self: center;
+    align-self: center;
 }
 
 /****************************** tienda.html ******************************/
@@ -853,61 +923,6 @@ html{
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
     padding-left: 40px;
-}
-
-.container-products-courses{
-    display: flex;
-    flex-direction: row;                        /* movimiento en sentido vertical */
-    flex-wrap: wrap;
-    height: 390px;                              
-    background-color: #FCEFE4;
-    justify-content: space-around;
-    align-items: center;                       /* alinear elementos */
-    row-gap: 20px;
-    /* align-content: flex-end; */              /* solo funciona cuando tengo multilinea */ 
-    padding-left: 40px;
-}
-
-.product{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 260px;
-    height: 290px;
-    background-color: #FCEFE4;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 16px;
-    border-style: solid;
-    border-color: #7AA7A7;
-}
-
-.details{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #FCEFE4;
-    justify-content: center;
-    align-items: center;
-}
-
-.details h3{
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    text-align: center; 
-}
-
-.details p{
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-weight: bolder; 
-}
-
-.details button a{
-    text-decoration: none;
-    color: #7AA7A7;
-    font-family: 'Poppins', sans-serif;
 }
 
 /****************************** Media queries ******************************/
