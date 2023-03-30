@@ -1499,6 +1499,45 @@ html{
     .cake-designer, .butter-full, .bakery , .icepops{
         width: 26rem;
     }
+
+    /****************************** tienda.html ******************************/
+
+    .tienda-titles h2{
+        font-size: 2.6rem;
+        padding-left: 6rem;
+    }
+    
+
+    .container-products-molds{
+        height: 76rem;
+        grid-template-rows: repeat(2,38rem); 
+        grid-template-columns: repeat(2,28rem);
+        grid-template-areas: 
+        "heartcake picos"
+        "platos cucharas";
+    }
+
+     .heart-cake, .picos, .platos, .cucharas{
+        width: 28rem;
+    }
+    
+    .container-products-courses{
+        height: 78rem;
+        grid-template-rows: repeat(2,38rem); 
+        grid-template-columns: repeat(2,28rem);
+        grid-template-areas: 
+        "cdesigner bfull"
+        "fline macarrons";
+    }
+
+    .cdesigner, .bfull, .fline, .macarrons{
+        width: 28rem;
+        height: 32rem;
+    }
+
+    .fline h3{
+        font-size: 2.1rem;
+    }
 }
 
 @media(max-width:767px){
@@ -1868,6 +1907,41 @@ html{
         "bakery" 
         "icepops";
     }
+
+    /****************************** tienda.html ******************************/
+
+    .tienda-titles{
+        height: 8rem;
+    }
+    
+    .tienda-titles h2{
+        font-size: 2.4rem;
+        padding-left: 1.4rem;
+        padding-top: 1.4rem; 
+    }
+    
+    .container-products-molds{
+        height: 143rem;
+        grid-template-rows: repeat(4,36rem); 
+        grid-template-columns: 28rem;
+        grid-template-areas: 
+        "heartcake" 
+        "picos"
+        "platos" 
+        "cucharas";
+        padding-top: 0.1rem;
+    }
+    
+    .container-products-courses{
+        height: 146rem;
+        grid-template-rows: repeat(4,36rem); 
+        grid-template-columns: 28rem;
+        grid-template-areas: 
+        "cdesigner" 
+        "bfull"
+        "fline" 
+        "macarrons";
+    }
 }
 
 @media(max-width:424px){
@@ -1912,6 +1986,12 @@ html{
 
     .taller-title h1{
         font-size: 3.2rem;
+    }
+
+    /****************************** taller.html ******************************/
+
+    .tienda-titles h2{
+        font-size: 2.2rem;
     }
 }
 
@@ -1982,6 +2062,16 @@ html{
         font-size: 2rem;
         padding-left: 2rem;
         padding-top: 1.6rem;
+    }
+
+    /****************************** taller.html ******************************/
+
+    .tienda-titles{
+        height: 10rem;
+    }
+
+    .tienda-titles h2{
+        font-size: 2rem;
     }
 }
 
