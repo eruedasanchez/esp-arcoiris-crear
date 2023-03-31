@@ -55,7 +55,7 @@ html{
 }
 
 .header-icons a span{
-    vertical-align: 25%;
+    vertical-align: 5%;
 }
 
 /****************************** index.html ******************************/
@@ -228,7 +228,20 @@ html{
     flex-direction: row;
     justify-content: center;
     padding-right: 4rem;  
-    gap: 9rem; 
+    column-gap: 9rem; 
+}
+
+.form input{
+    color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+.form button{
+    color: #FCEFE4;
+    background-color: #7AA7A7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
 }
 
 .container-promos{
@@ -293,7 +306,7 @@ html{
 /****************************** footer ******************************/
 
 .container-newsletter{
-    height: 12rem;
+    height: 16rem;
     background-color: #FCEFE4;  
     display: grid;
     justify-content: center;
@@ -301,7 +314,7 @@ html{
     grid-template-rows:    repeat(2, 5rem);
     grid-template-areas: 
     "recibi          form"
-    "suscribite      ."; 
+    "suscribite      form"; 
 }
 
 .container-newsletter p{
@@ -1207,12 +1220,13 @@ html{
     /******************************* footer *******************************/
 
     .container-newsletter{
-        height: 15rem;
+        height: 20rem;
         grid-template-columns: 66rem;
-        grid-template-rows: 4rem 6rem 4rem;
+        grid-template-rows: 4rem 6rem 4rem 4rem;
         grid-template-areas: 
         "recibi"
         "suscribite"     
+        "form"
         "form"; 
     }
 
@@ -1223,11 +1237,7 @@ html{
     .container-newsletter h2{
         text-align: center;
     }
-
-    .container-newsletter h3{
-        padding-left: 10rem;
-    }
-
+    
     .container-information{
         height: 27rem;                             
         grid-template-columns: repeat(2,33rem);
@@ -1768,17 +1778,12 @@ html{
     }
 
     .container-sponsors {
-        height: 23.5rem;
+        height: 24rem;
         display: grid;
         grid-template-columns: repeat(2,15rem);
-        grid-template-rows: repeat(2,5rem);
+        grid-template-rows: repeat(2,5rem) 8rem;
         padding-right: 0.1rem;  
     }
-
-    .callebaut{
-        padding-left: 10rem;
-    }
-
     .container-promos{
         height: 30rem;
         grid-template-rows: 4rem 10rem repeat(2,4rem); 
@@ -2016,6 +2021,11 @@ html{
         width: 20rem;
         height: 30rem;
         padding-left: 0.1rem;
+    }
+
+    .container-sponsors{
+        display: grid;
+        grid-template-columns: repeat(2, 15rem);
     }
 
     .container-promos{
