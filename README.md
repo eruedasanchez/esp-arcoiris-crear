@@ -1,5 +1,5 @@
 # Espacio Arcoiris Crear Web Site
-***
+
 ## Table of Contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
@@ -16,7 +16,6 @@ una experiencia confortable para aquel usuario que desee visitarla.
 ### Techonologies
 ***
 En este proyecto se utilizan las siguientes tecnologias:
-***
 * [HTML](https://example.com): Version 5 
 * [CSS](https://example.com): Version 3
 * [Bootstrap](https://example.com): Version 5.2.3
@@ -35,3 +34,11 @@ $ open taller.html
 $ open tienda.html
 ```
 
+### How to see my web site
+***
+```
+$ Copiar el siguiente URL en tu navegador para ingresar al repositorio: https://github.com/eruedasanchez/esp-arcoiris-crear.git
+$ Ingresar en la seccion Settings 
+$ Ingresar en la solapa Pages en la seccion Code and automation
+$ Dentro de la solapa GitHub Pages, tocar el boton Visit site
+```
