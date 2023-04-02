@@ -427,17 +427,19 @@ html{
 
 .footer-sale-contact{
     list-style: none;
+    padding-left: 0.1rem;
+
 }
 
 .footer-sale-contact li a{
     text-decoration: none;
     color: #7AA7A7;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
 }
 
 .footer-sale-contact a span{
-    vertical-align: 39%;
+    vertical-align: 10%;
 }
 
 .footer-information{
@@ -1674,6 +1676,10 @@ html{
         grid-row-end: 12;     
         order: 3;                         
     }
+
+    .footer-sale-contact li a{
+        padding-left: 10.5rem; 
+    }
     
     .footer-sale h2{
         grid-column-start: 1;
@@ -1681,10 +1687,6 @@ html{
         grid-row-start: 9;
         grid-row-end: 10;
         text-align: center;
-    }
-
-    .footer-sale-contact li a{
-        padding-left: 11rem; 
     }
     
     .footer-social-networks{
